@@ -1,0 +1,129 @@
+html, body{
+    margin: 0;
+    padding: 0;
+}
+/* TYPOGRAPHY */
+
+h1, h2{
+    text-align: center;
+    margin: 0;
+}
+
+h1{
+    font-size: 45px ;
+}
+
+h2{
+    font-size: 30px;
+}
+
+/* LAYOUT */
+body{
+    background: linear-gradient(160deg, rgb(3, 167, 167),rgb(7, 238, 188)) no-repeat;
+    font-family: "Inter", sans-serif;
+    height: 100vh;
+}
+header{
+    padding: 20px 0;
+}
+.container{
+    margin: 0 auto;
+    width: 40%;
+    min-width: 400px;
+    padding: 30px;
+    box-shadow: 5px 5px 14px #2b2a2a;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    background-color: #ffffff;
+}
+.score-container{
+    display: flex;
+    width: 100%;
+    padding: 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.player-1,
+.player-2 {
+    width: 60%;
+    font-size: 25px;
+    font-weight: 700;
+    padding: 5px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#dice-1,
+#dice-2{
+    display: inline-block;
+    padding: 8px 8px 2px;
+    margin-top: 15px;
+    width: 45%;
+    border-radius: 10px;
+}
+
+.dice{
+    width: 100%;
+}
+
+.roll-active{
+    box-shadow: 3px 3px 10px #7e7d7d;
+}
+
+button{
+    padding: 15px 30px;
+    background-color: #f79c9c;
+    color: whitesmoke;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.play{
+    display: block;
+}
+
+.reset{
+    display: block;
+}
+
+.btn-hidden{
+    display: none;
+}
+
+/*********** 
+Chance  
+***********/
+.chance-container{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 5px 0 20px;
+    padding: 10px 5px;
+    border: 2px solid rgb(3, 167, 167);
+    border-radius: 6px;
+}
+
+.chance-switch{
+    flex-direction: row-reverse;
+}
+
+.chance-container p{
+    font-size: 14px;
+    padding: 0 35px;
+}
+
+.chance-container .chance{
+    background-color: #3aaa06;
+    margin: 0 10px;
+}
+
+.warning{
+    display: block;
+    color: red;
+}

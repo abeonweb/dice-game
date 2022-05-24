@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Dice Game</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="css/styles.css">
+        <script src="js/main.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <h1>Dice Game</h1>
+        </header>
+        <main>
+            <div class="container">
+                <h2 class="message">Player 1 Turn</h2>
+                <div class="score-container">
+                    <div class="player-1">Score: 
+                        <span class="score-1">0</span>
+                        <div id="dice-1" class="roll-active"><img class="dice" src="images/dice-0.png" alt=""></div>
+                    </div>
+                    <div class="player-2">Score: 
+                        <span class="score-2">0</span>
+                        <div id="dice-2"><img class="dice" src="images/dice-0.png" alt=""></div>
+                    </div>
+                </div>
+                <div class="chance-container">
+                    <button class="chance">Chance</button>
+                    <p>Chance to double roll. <span class="warning">(Rolling 3 or 6, loses 1 point)</span></p>
+                </div>
+                <button class="play">Roll Dice 🎲</button>
+                <button class="reset btn-hidden">Reset Game 🔁</button>
+            </div><!--/container-->
+        </main>
+    </body>
+</html>
